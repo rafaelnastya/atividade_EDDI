@@ -3,14 +3,14 @@ package situacao_taxi_att_eddi;
 public class Viagem {
     private String Nome_taxista;
     private String Destino;
-    private Number Km_percorrido;
-    private float Valor_taximetro;
+    private int Km_percorrido;
+    private double Valor_taximetro;
     
     public Viagem(){
         
     }
 
-    public Viagem(String Nome_taxista, String Destino, Number Km_percorrido, float Valor_taximetro) {
+    public Viagem(String Nome_taxista, String Destino, int Km_percorrido, double Valor_taximetro) {
         this.Nome_taxista = Nome_taxista;
         this.Destino = Destino;
         this.Km_percorrido = Km_percorrido;
@@ -37,15 +37,15 @@ public class Viagem {
         return Km_percorrido;
     }
 
-    public void setKm_percorrido(Number Km_percorrido) {
+    public void setKm_percorrido(int Km_percorrido) {
         this.Km_percorrido = Km_percorrido;
     }
 
-    public float getValor_taximetro() {
+    public double getValor_taximetro() {
         return Valor_taximetro;
     }
 
-    public void setValor_taximetro(float Valor_taximetro) {
+    public void setValor_taximetro(double Valor_taximetro) {
         this.Valor_taximetro = Valor_taximetro;
     }
 
